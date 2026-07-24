@@ -323,33 +323,6 @@ Describe Ingress
 kubectl describe ingress ingress-2048 -n game-2048
 ```
 
----
-
-# 📸 Screenshots
-
-Add screenshots here.
-
-```
-screenshots/
-
-application.png
-
-alb.png
-
-target-group.png
-
-pods.png
-
-ingress.png
-```
-
-Example:
-
-```markdown
-## Running Application
-
-![Application](screenshots/application.png)
-```
 
 ---
 
