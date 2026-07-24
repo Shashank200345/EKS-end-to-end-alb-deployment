@@ -30,37 +30,9 @@ The project also demonstrates:
 
 # 🏗 Architecture
 
-```text
-                               Internet
-                                   │
-                                   │
-                          DNS (ALB Endpoint)
-                                   │
-                                   ▼
-                 ┌────────────────────────────┐
-                 │ Application Load Balancer  │
-                 │        (AWS ALB)           │
-                 └─────────────┬──────────────┘
-                               │
-                     HTTP Listener (Port 80)
-                               │
-                               ▼
-                     Kubernetes Ingress
-                               │
-                               ▼
-                  Kubernetes Service (ClusterIP)
-                               │
-                ┌──────────────┴──────────────┐
-                │                             │
-        2048 Pod Replica 1            2048 Pod Replica 2
-                │                             │
-                └──────────────┬──────────────┘
-                               ▼
-                     Amazon EKS Worker Nodes
-                               │
-                               ▼
-                           Amazon EKS
-```
+<p align="center">
+  <img src="./application.png" alt="2048 Game Running on Amazon EKS" width="100%">
+</p>
 
 ---
 
